@@ -7,9 +7,20 @@
     <title>Free Plastic Project</title>
 
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <style>
+        #player {
+            display: none;
+        }
+    </style>
 </head>
 <body>
+    <audio id="player" controls="controls" loop="loop" autoplay="autoplay" src="assets/audio/yamyam.mp3"></audio>
 
+    <script>
+        var audio = document.getElementById("player");
+        audio.volume = 0.1;
+      </script>
     <div class="perco">
     <div class="object">
         <img class="earth" src="assets/img/earthgif.gif" alt="">
@@ -52,7 +63,7 @@
     </div>
 
     <div class="group">
-        <span><h3>Las empresas ayudan al medio ambiente incluyen:</h3></span>
+        <span><h3>Las empresas que ayudan al medio ambiente incluyen:</h3></span>
         <img class="empresas" src="assets/img/logos.jpg" alt="">
     </div>
 
